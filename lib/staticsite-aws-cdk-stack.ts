@@ -21,7 +21,7 @@ export class StaticsiteAwsCdkStack extends cdk.Stack {
       cors: [
         {
           allowedMethods: [s3.HttpMethods.GET],
-          allowedOrigins: ['*'],
+          allowedOrigins: ['distribution.distributionDomainName'],
           allowedHeaders: ['*'],
          
          }]
